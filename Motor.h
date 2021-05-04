@@ -3,6 +3,14 @@
 
 #include <Arduino.h>
 
+/**
+ * @file
+ * @version 1.0
+ * @author Marco Fincato
+ * 
+ * Simple class to control a motor object.
+ */
+
 class Motor {
   public:
     Motor(byte pwm, byte in1, byte in2);
