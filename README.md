@@ -6,5 +6,5 @@ The project has been tested on a Raspberry Pi Pico using the MbedOS target inclu
 ## File information
 
 This project uses a Motor class to control each motor.
-The pins used are written in the `configuration.h` file.
+The pins used are written in the `config.h` file.
 
