@@ -35,7 +35,6 @@ void Motor::begin() {
   stop();
 }
 
-
 /**
  * Starts the motor.
  * 

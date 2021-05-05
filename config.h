@@ -1,3 +1,6 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
 #define M1_IN1 13
 #define M1_IN2 14
 #define M1_PWM 15
@@ -13,3 +16,5 @@
 #define M4_IN1 4
 #define M4_IN2 5
 #define M4_PWM 6
+
+#endif

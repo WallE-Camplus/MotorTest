@@ -8,7 +8,7 @@ Motor m3(M3_PWM, M3_IN1, M3_IN2);
 Motor m4(M4_PWM, M4_IN1, M4_IN2);
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   m1.begin();
   m2.begin();
   m3.begin();

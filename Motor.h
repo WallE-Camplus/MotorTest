@@ -10,7 +10,6 @@
  * 
  * Simple class to control a motor object.
  */
-
 class Motor {
   public:
     Motor(byte pwm, byte in1, byte in2);
