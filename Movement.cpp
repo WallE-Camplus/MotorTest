@@ -108,7 +108,7 @@ void Movement::goTurning(bool avance_direction, bool turn_direction, int speed, 
   front_left->go(turn_direction?speed:(speed/2),avance_direction);
   front_right->go(turn_direction?speed:(speed/2),avance_direction);
   rear_left->go(turn_direction?(speed/2):speed,avance_direction);
-  rear_right->go((!turn_direction)?(speed/2):speed,avance_direction);
+  rear_right->go((turn_direction)?(speed/2):speed,avance_direction);
   
 
   /*
