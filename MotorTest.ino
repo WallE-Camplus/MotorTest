@@ -8,12 +8,22 @@ Movement movement;
 void setup() {
   Serial.begin(9600);
   movement.begin();
-  for(int i = 0; i < 4; i++) {
-    movement.go(FORWARD,MAX_SPEED,5);
-    movement.turn(LEFT,MAX_SPEED,2);
-  }
 }
 
 void loop() {
-  
+  int a, b, c;
+
+  while (!Serial.available());
+
+  a = Serial.parseInt(); 
+  b = Serial.parseInt();
+  c = Serial.parseInt();
+
+  switch(a) {
+    case 1:
+     movement.go(b, MAX_SPEED, c);
+     break;
+    case 2:
+     movement.turn(b, MAX_SPEED, c);
+  }
 }
